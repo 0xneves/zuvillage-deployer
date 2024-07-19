@@ -1,7 +1,10 @@
 {
   "name": "zuvillage-deployer",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "schemas": "npx hardhat run scripts/createSchemas.ts --network op",
+    "titles": "npx hardhat run scripts/setAttestationTitles.ts --network op",
+    "actions": "npx hardhat run scripts/setSchemas.ts --network op"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-chai-matchers": "^1.0.0",

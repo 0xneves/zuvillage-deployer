@@ -49,7 +49,7 @@ async function main() {
   const uid3 = await Registry.callStatic.register(schema, resolverAddress, revocable);
   const tx3 = await Registry.register(schema, resolverAddress, revocable);
   await tx3.wait();
-  console.log("VILLAGER schema registered", uid3);
+  console.log("ATTEST RESPONSE schema registered", uid3);
 }
 
 main()
